@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: lightgray;
+            padding: 0 6%;
+            height: 20vh;
+        }
+
+        header .logo {
+            font-size: 40px;
+            font-weight: 700;
+            margin-right: auto;
+        }
+
+        .menu-links {
+            display: flex;
+        }
+
+        .menu-links li {
+            font-size: 28px;
+            font-weight: 500;
+            list-style: none;
+        }
+
+        .menu-links li:first-child {
+            margin-right: 50px;
+        }
+
+        .menu-links li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu-links li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            padding: 0 6%;
+            position: relative;
+            height: 70vh;
+            overflow: hidden;
+        }
+
+        .text-part {
+            width: 76%;
+        }
+
+        article.cite,
+        article.about {
+            width: 75%;
+        }
+
+        article.cite {
+            display: flex;
+            flex-direction: column;
+            margin: 80px 0 60px 0;
+        }
+
+        article.cite h1 {
+            font-size: 60px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        article.cite p {
+            font-size: 28px;
+            font-style: italic;
+            margin-left: 68%;
+        }
+
+        article.about h2 {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        article.about p {
+            font-size: 28px;
+        }
+
+        .profile-image-part {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .profile-image-part img {
+            width: auto;
+            height: 500px;
+        }
+
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 6%;
+            height: 10vh;
+            background-color: lightgray;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        footer .contact-links {
+            display: flex;
+            align-items: center;
+        }
+
+        footer .mail-link {
+            margin-right: 40px;
+            text-decoration: none;
+            color: black;
+        }
+
+        footer .socials img {
+            width: auto;
+            height: 26px;
+        }
+
+        footer .socials a:first-child {
+            margin-right: 16px;
+        }
+
+        #studentska_unie {
+            position: absolute;
+            top: -2vh;
+            left: 2vw;
+            z-index: -1;
+            width: auto;
+            height: 76vh;
+        }
+    </style>
+    <title>Webik</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Čajka Kajka</div>
+        <nav>
+            <ul class="menu-links">
+                 <li><a href="Moje projekty">Moje projekty</a></li>
+                 <li><a href="Kontakty">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="text-part">
+            <article class="cite">
+                <h2>"Keď si smutný, tak nebuď"</h2>
+                <p>Simona 2022</p>
+            </article>
+    <article class="about">
+    <h2>O mně</h2>
+        <p>
+            Jmenuji se Herold. <br> Mám stabilní práci jako vodič autobusu,
+            <br> ale ve volném čase dělám weby.<br> Mám tři děti a rád vařím.
+        </p>
+    </article>
+    </div>
+    <div class="profile-image-part">
+    <img src="Lev.jpg" alt="Lev" width="500" height="333">
+    </div>
+    </main>
+    <footer>
+        <p>©STUDENTSKÁ UNIE UTB, 2022</p>
+        <div class="contact-links">
+            <a class="mail-link" href="mailto:su@utb.cz">su@utb.cz</a>
+            <div class="socials">
+                <a
+                        href="https://www.facebook.com/studentskaunieutb/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    <img src="ikona-fb.jpg" alt="fb ikona" />
+                </a>
+                <a
+                        href="https://www.instagram.com/studentskaunieutb/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    <img src="ikona-ig.jpg" alt="ig ikona" />
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
