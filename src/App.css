@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: lightgray;
+    padding: 0 6%;
+    height: 20vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header .logo {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-links {
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-links li {
+    font-size: 28px;
+    font-weight: 500;
+    list-style: none;
+}
+
+.menu-links li:first-child {
+    margin-right: 50px;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-links li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    padding: 0 6%;
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.text-part {
+    width: 76%;
+}
+
+article.cite,
+article.about {
+    width: 75%;
+}
+
+article.cite {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 60px 0;
+}
+
+article.cite h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+article.cite p {
+    font-size: 28px;
+    font-style: italic;
+    margin-left: 68%;
+}
+
+article.about h2 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+article.about p {
+    font-size: 28px;
+}
+
+.profile-image-part {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.profile-image-part img {
+    width: auto;
+    height: 500px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 6%;
+    height: 10vh;
+    background-color: lightgray;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+footer .contact-links {
+    display: flex;
+    align-items: center;
+}
+
+footer .mail-link {
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+footer .socials img {
+    width: auto;
+    height: 26px;
+}
+
+footer .socials a:first-child {
+    margin-right: 16px;
+}
+
+#bubble-img {
+    position: absolute;
+    top: -2vh;
+    left: 2vw;
+    z-index: -1;
+    width: auto;
+    height: 76vh;
 }
